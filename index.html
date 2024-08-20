@@ -15,7 +15,7 @@
     <main>
         <section class="lateral-esquerda">
             <div class="entrada-texto">
-                <textarea id="textArea" placeholder="Digite seu texto"></textarea>
+                <textarea class="text-area" id="textArea" placeholder="Digite seu texto"></textarea>
             </div>
 
             <div class="info-extra">
@@ -31,8 +31,10 @@
         </section>
 
         <section class="lateral-direita">
-            <textarea class="mensagem" cols="20" rows="10"></textarea>
-            <button class="bnt-copiar">Copiar</button>
+            <div class="text-area-container">
+                <textarea class="mensagem" cols="30" rows="25" disabled></textarea>
+                <button onclick="copiarResultado()" class="bnt-copiar">Copiar</button>
+            </div>
         </section>
     </main>
 

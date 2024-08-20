@@ -11,21 +11,10 @@ function criptografarTexto() {
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
 
-    let imagemLupa = document.getElementById("lupa-img")
+    let textArea = document.querySelector(".mensagem")
 
-    imagemLupa.style.display = "none"
-
-    let paragrafoResultado = document.getElementById("paragrafo-resultado")
-
-    paragrafoResultado.innerHTML = textoCriptografado
-
-    let mensagemNaoEncontrada = document.getElementById("mensagem-nao-encontrada")
-
-    mensagemNaoEncontrada.style.display = "none"
-
-    let avisoDigitar = document.getElementById("aviso-digitar")
-
-    avisoDigitar.style.display = "none"
+    textArea.style.backgroundImage = "none"
+    textArea.value = textoCriptografado
 }
 
 function descriptografarTexto() {
@@ -38,36 +27,17 @@ function descriptografarTexto() {
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
 
-    let imagemLupa = document.getElementById("lupa-img")
+    let textArea = document.querySelector(".mensagem");
 
-    imagemLupa.style.display = "none"
-    
-    let paragrafoResultado = document.getElementById("paragrafo-resultado")
-    
-    paragrafoResultado.innerHTML = textoDescriptografado
-    
-    let mensagemNaoEncontrada = document.getElementById("mensagem-nao-encontrada")
-    
-    mensagemNaoEncontrada.style.display = "none"
-    
-    let avisoDigitar = document.getElementById("aviso-digitar")
-    
-    avisoDigitar.style.display = "none"
+    textArea.style.backgroundImage = "none";
+    textArea.value = textoDescriptografado;
 }
 
 function copiarResultado() {
-    // Obter o elemento <p> com o ID 'paragrafo-resultado'
-    var paragrafoResultado = document.getElementById("paragrafo-resultado");
+    let textArea = document.querySelector(".mensagem");
 
-    // Criar uma seleção de intervalo
-    var range = document.createRange();
-    range.selectNode(paragrafoResultado);
+    let texto = textArea.value
 
-    // Limpar qualquer seleção existente e adicionar a nova seleção
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-
-    // Copiar o texto selecionado para a área de transferência
-    navigator.clipboard.writeText(range.toString())
-    };
+    navigator.clipboard.writeText(texto)
+};
 
