@@ -20,7 +20,7 @@
 
             <div class="info-extra">
                 <img width="16" height="16" src="https://img.icons8.com/ios-glyphs/30/000000/info--v1.png" alt="info--v1"/>
-                <p>Apenas letras minúsculas e sem acento</p>
+                <h6>Apenas letras minúsculas e sem acento</h6>
             </div>
 
             <div class="botoes-decodificar">
@@ -31,23 +31,8 @@
         </section>
 
         <section class="lateral-direita">
-            <div class="imagem-container">
-                <img id="lupa-img" src="img/homem-lupa.png" alt="Pessoa com uma lupa">
-
-                
-            </div>
-
-            <div class="resultado-container">
-                <p id="paragrafo-resultado" class="texto-info"></p>
-            </div>
-
-            <div class="paragrafos-direita">
-                <p class="texto-mensagem" id="mensagem-nao-encontrada">Nenhuma mensagem encontrada</p>
-                <p class="texto-info" id="aviso-digitar">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
-
-            <button onclick="copiarResultado()" id="botao-copiar">Copiar</button>
-
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="bnt-copiar">Copiar</button>
         </section>
     </main>
 
