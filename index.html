@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="lateral-esquerda">
+            <div class="entrada-texto">
+                <textarea id="textArea" placeholder="Digite seu texto"></textarea>
+            </div>
+
+            <div class="info-extra">
+                <img width="16" height="16" src="https://img.icons8.com/ios-glyphs/30/000000/info--v1.png" alt="info--v1"/>
+                <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+
+            <div class="botoes-decodificar">
+                <button onclick="criptografarTexto()" id="botao-criptografar">Criptografar</button>
+                <button onclick="descriptografarTexto()" id="botao-descriptografar">Descriptografar</button>
+
+            </div>
+        </section>
+
+        <section class="lateral-direita">
+            <div class="imagem-container">
+                <img id="lupa-img" src="img/homem-lupa.png" alt="Pessoa com uma lupa">
+
+                
+            </div>
+
+            <div class="resultado-container">
+                <p id="paragrafo-resultado" class="texto-info"></p>
+            </div>
+
+            <div class="paragrafos-direita">
+                <p class="texto-mensagem" id="mensagem-nao-encontrada">Nenhuma mensagem encontrada</p>
+                <p class="texto-info" id="aviso-digitar">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <button onclick="copiarResultado()" id="botao-copiar">Copiar</button>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
