@@ -116,6 +116,7 @@ textarea:focus::placeholder {
     background-position: top;
     border: none;
     border-radius: 24px;
+    padding: 10px;
     resize: none;
     font-size: 24px;
     box-shadow: 0px 24px 32px -8px #00000014;
@@ -136,6 +137,6 @@ textarea:focus::placeholder {
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
-    left: 40px; /* Ajusta a posição do botão dentro do textarea */
+    left: 40px;
     bottom: 20px;
 }
