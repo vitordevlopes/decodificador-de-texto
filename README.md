@@ -18,14 +18,14 @@ HTML, CSS e JavaScript foram as linguagens utilizadas.
 
 ## Sobre o JavaScript
 Utilizei nesse projeto três funções dentro do Javascript, as funções de criptografia utilizam o método replace(), porém acredito que elas precisam de algumas correções.
-A função de copiar utiliza a [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) com o método writeText(), tentei usar outras abordagens tentando copiar o contéudo de uma tag <p> por exemplo, porém não tive sucesso.
+A função de copiar utiliza a [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) com o método writeText(), tentei usar outras abordagens tentando copiar o contéudo de uma tag &lt;p&gt; por exemplo, porém não tive sucesso.
 
 # Lógica da criptografia
 
 O algoritmo para criptografar ou descriptografar o texto é bem simples, basta seguir essa lógica ou o inverso:
 
-A letra "e" é convertida para "enter".
-A letra "i" é convertida para "imes".
-A letra "a" é convertida para "ai".
-A letra "o" é convertida para "ober".
-A letra "u" é convertida para "ufat".
+- A letra "e" é convertida para "enter".
+- A letra "i" é convertida para "imes".
+- A letra "a" é convertida para "ai".
+- A letra "o" é convertida para "ober".
+- A letra "u" é convertida para "ufat".
