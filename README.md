@@ -1,3 +1,6 @@
 # Decodificador De Texto
 
+
+
+
 # Introdução
